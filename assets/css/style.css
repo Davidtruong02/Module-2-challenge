@@ -57,7 +57,7 @@ a {
 }
 
 
-.page-section {
+.page {
     margin: 25px 0;
     padding: 10px 0;
     display: flex;
@@ -65,18 +65,19 @@ a {
     flex-wrap:wrap;
     align-items: stretch;
     justify-content: space-between;
+    color:hsl(153, 71%, 59%);
 }
 
-.page-section > h2 {
+.page > h2 {
     flex: 0 0 20%;
     text-align: right;
     padding-right: 15px;
-    border-right: 4px solid hsl(153, 71%, 59%);
-    font-size: 3vw;
+    border-right: 3px solid hsl(153, 71%, 59%);
+    font-size: 2vw;
     line-height: 1.1;
 }
 
-.page-section > div {
+.page > div {
     flex: 0 0 77%;
 }
 
@@ -84,10 +85,42 @@ a {
 
 p {
     color:hsl(153, 71%, 59%);
-    padding-left: 15%;
     font-size: 24px;
 }
 
 
+.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: hsl(153, 71%, 59%);
+    outline: 2px solid hsl(153, 71%, 59%);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+    width: 40%;
+}
+
+.code-card .code-block {
+    flex-grow: 1;
+}
+
+.code-card pre {
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.5rem 1rem;
+    color: white;
+    border-radius: 8px;
+    background-image: linear-gradient( rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100% );
+    display: flex;
+    align-items: center;
+}
 
 
+@media screen and (min-width: 992px)
+.card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
