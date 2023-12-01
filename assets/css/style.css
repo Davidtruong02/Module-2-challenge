@@ -1,7 +1,93 @@
-body {
-    font-family: 'Space Grotesk', sans-serif;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-header {
-    
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(0, 0%, 8%);
 }
+
+
+header {
+    padding: 20px;
+    background-color: hsl(0, 0%, 15%);
+    color: #FFFFFF;
+}
+
+header nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+    color: white;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 36px;
+    background-color: hsl(153, 71%, 59%);
+    color: black;
+
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration-line: underline;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+.hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/spaceman.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid hsl(153, 71%, 59%);
+    font-size: 3vw;
+    line-height: 1.1;
+}
+
+.page-section > div {
+    flex: 0 0 77%;
+}
+
+
+
+p {
+    color:hsl(153, 71%, 59%);
+    padding-left: 15%;
+    font-size: 24px;
+}
+
+
+
+
