@@ -37,6 +37,9 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
+# Deployment Website
+https://davidtruong02.github.io/Module-2-challenge/
+
 ## Mock-Up
 
 The following animation shows the web application's appearance and functionality:
