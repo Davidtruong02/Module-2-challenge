@@ -12,22 +12,20 @@ body {
 
 
 header {
-    padding: 20px;
+    padding: 20px 35px;
     background-color: hsl(0, 0%, 15%);
-    color: #FFFFFF;
 }
 
 header nav{
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    float:right;
     font-size: 20px;
-    color: white;
 }
 
 header h1 {
     display: inline-block;
-    font-size: 36px;
+    font-size: 40px;
     background-color: hsl(153, 71%, 59%);
     color: black;
 
@@ -37,28 +35,38 @@ header nav ul {
     list-style-type: none;
 }
 
+
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
     text-decoration-line: underline;
 }
 
-a {
-    color: #FFFFFF;
+header a {
+ color: white;
+ font-size: 28px;
 }
 
 .hero {
-    height: 400px;
+    height: 300px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/spaceman.jpg");
-    background-position: center;
-    background-size: contain;
+    background-position: 100%;
+    background-size: cover;
 }
 
+.hero h2 {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin-right: 10px;
+    font-size: 30px;
+    color: hsl(153, 71%, 59%); 
+}
 
 .page {
-    margin: 25px 0;
+    margin: 25px 15px;
     padding: 10px 0;
     display: flex;
     flex-direction: row;
@@ -73,7 +81,7 @@ a {
     text-align: right;
     padding-right: 15px;
     border-right: 3px solid hsl(153, 71%, 59%);
-    font-size: 2vw;
+    font-size: 46px;
     line-height: 1.1;
 }
 
@@ -85,42 +93,160 @@ a {
 
 p {
     color:hsl(153, 71%, 59%);
-    font-size: 24px;
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 
-.code-card {
+
+.flex-row2 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: hsl(153, 71%, 59%);
-    outline: 2px solid hsl(153, 71%, 59%);
-    outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
-    width: 40%;
-}
-
-.code-card .code-block {
-    flex-grow: 1;
-}
-
-.code-card pre {
-    white-space: pre-wrap;
-    overflow: auto;
-    tab-size: 4;
-    padding: 1.5rem 1rem;
-    color: white;
-    border-radius: 8px;
-    background-image: linear-gradient( rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100% );
-    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    margin: 0 auto 0 auto;
+    width: 90%;
+
+}
+
+.main-project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    height: 700px;
+    width: 100%;
+}
+
+.side-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    flex-direction: row;
+    width: 100%;
+}
+
+.tribute-page {
+    background-image: url(../images/spaceman\ 2.0.jpg);
+    background-size: cover;
+    width: 47.5%;
+    height: 300px;
+    margin-bottom: 2%;
+    margin-right: 0.5%;
+    border: hsl(153, 71%, 59%) 5px solid;
+    position: relative;
+}
+
+.first-project {
+    background-image: url(../images/html-css-git-homework-demo.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin: 0 1% 2% 1%;
+    border: hsl(153, 71%, 59%) 4px solid;
+    position: relative;
+}
+
+.technical-doc {
+    background-image: url(../images/spaceman\ 3.0.jpg);
+    background-size: cover;
+    width: 47.5%;
+    height: 300px;
+    margin-bottom: 2%;
+    margin-right: 0.5%;
+    border: hsl(153, 71%, 59%) 5px solid;
+    position: relative;
 }
 
 
-@media screen and (min-width: 992px)
-.card-column {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 90%;
 }
+
+.flex-row p {
+    display: inline-block;
+    text-align: start;
+    background-color: hsl(153, 71%, 59%);
+    opacity: 85%;
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    color:black;
+}
+
+section a {
+    line-height: 1.5;
+    color:white;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 15px 0 15px;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+        color: hsl(153, 71%, 59%);
+
+    }
+    .hero h2 {
+        font-size: 20px;
+        text-align: end;
+    
+    }
+
+   
+}
+    
+@media screen and (max-width: 768px) {
+         section {
+          padding: 30px 15px;
+
+        }
+
+        
+    }
+
+
+    @media screen and (max-width: 575px) {
+        .page {
+          width: 95%;
+        }
+      
+         p {
+          width: 100%;
+          }
+
+        img{
+        width: 100%;
+        }
+    }
