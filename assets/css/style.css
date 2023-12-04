@@ -95,11 +95,21 @@ p {
     color:hsl(153, 71%, 59%);
     font-size: 30px;
     margin-right: 10px;
+    padding-left: 10px;
 }
 
 
 
 .flex-row2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+
+.flex-row {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
