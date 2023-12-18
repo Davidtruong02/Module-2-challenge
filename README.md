@@ -38,7 +38,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 # Deployment Website
-https://davidtruong02.github.io/Module-2-challenge/
+(https://davidtruong02.github.io/Professional_Portfolio/)
 
 ## Mock-Up
 
